@@ -1,4 +1,3 @@
-# Trading-Data-Analysis-and-Modeling
 # Trading Data Analysis and Modeling
 
 This Jupyter Notebook provides a complete workflow for reading, cleaning, analyzing, and preparing trading data for machine learning modeling using **pandas**, **seaborn**, and **scikit-learn**. It automates exploratory data analysis (EDA), feature engineering, outlier detection, and model preparation for structured financial datasets.
@@ -43,4 +42,45 @@ The notebook performs an end-to-end analysis on trade-level data spanning multip
 
 ## 4. Requirements
 
-Ensure the following Python packages are installed:
+Ensure the following Python packages are installed: pip install pandas matplotlib seaborn scikit-learn numpy
+
+---
+
+## 5. Running the Notebook
+
+1. Place all CSV trade files in the same directory as the notebook.  
+2. Run all cells sequentially — each step is clearly labeled and prints descriptive progress information.  
+3. Review generated charts inline for patterns and anomalies.  
+4. The dataset processed in the final step (`model_ready_df`) is ready for machine learning or regression modeling.
+
+---
+
+## 6. Key Outputs
+
+- **EDA Visuals:**  
+  - Trade side distribution  
+  - Unit price and quantity histograms  
+  - Daily/hourly trade trends  
+- **Statistical Reports:**  
+  - Outlier counts  
+  - Top performing venues/instruments  
+- **Cleaned Dataset:**  
+  - `cleaned_df` (post outlier removal)  
+  - `model_ready_df` (for modeling)
+
+---
+
+## 7. Next Steps
+
+Use `model_ready_df` for:
+- Predictive modeling (trade value predictions)
+- Feature importance analysis
+- Market anomaly detection
+- Venue-based trade performance comparison
+
+---
+
+## 8. License
+
+This project is distributed for educational and analytical purposes. You are free to adapt and modify it for your internal data analysis workflows.
+
